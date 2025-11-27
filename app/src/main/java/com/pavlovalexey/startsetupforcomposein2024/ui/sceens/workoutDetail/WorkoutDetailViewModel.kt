@@ -1,10 +1,11 @@
-package com.pavlovalexey.startsetupforcomposein2024.viewmodel
+package com.pavlovalexey.startsetupforcomposein2024.ui.sceens.workoutDetail
 
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.pavlovalexey.startsetupforcomposein2024.repository.WorkoutRepository
 import com.pavlovalexey.startsetupforcomposein2024.model.Workout
+import com.pavlovalexey.startsetupforcomposein2024.repository.WorkoutRepository
+import com.pavlovalexey.startsetupforcomposein2024.ui.sceens.UiState
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow

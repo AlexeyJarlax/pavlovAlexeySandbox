@@ -1,4 +1,4 @@
-package com.pavlovalexey.startsetupforcomposein2024.ui
+package com.pavlovalexey.startsetupforcomposein2024.ui.sceens
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.WindowInsets

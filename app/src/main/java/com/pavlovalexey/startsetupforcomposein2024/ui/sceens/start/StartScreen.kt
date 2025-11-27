@@ -1,4 +1,4 @@
-package com.pavlovalexey.startsetupforcomposein2024.ui
+package com.pavlovalexey.startsetupforcomposein2024.ui.sceens.start
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
@@ -9,17 +9,17 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.pavlovalexey.startsetupforcomposein2024.ui.eventlist.SliderPagerIndicator
-import com.pavlovalexey.startsetupforcomposein2024.ui.eventlist.WorkoutListItem
+import com.pavlovalexey.startsetupforcomposein2024.ui.sceens.eventlist.SliderPagerIndicator
+import com.pavlovalexey.startsetupforcomposein2024.ui.sceens.eventlist.WorkoutListItem
 import com.pavlovalexey.startsetupforcomposein2024.ui.theme.AlexSearchTextField
-import com.pavlovalexey.startsetupforcomposein2024.viewmodel.UiState
-import com.pavlovalexey.startsetupforcomposein2024.viewmodel.WorkoutListViewModel
+import com.pavlovalexey.startsetupforcomposein2024.ui.sceens.UiState
+import com.pavlovalexey.startsetupforcomposein2024.ui.sceens.start.StartScreenViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun WorkoutListScreen(
     onItemClick: (Int) -> Unit,
-    viewModel: WorkoutListViewModel = hiltViewModel()
+    viewModel: StartScreenViewModel = hiltViewModel()
 ) {
     val uiState by viewModel.uiState.collectAsState()
     val workouts by viewModel.workouts.collectAsState()

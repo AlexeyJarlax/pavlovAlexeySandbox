@@ -1,4 +1,5 @@
-// Павлов Алексей, тестовое 2025
+// Павлов Алексей https://github.com/AlexeyJarlax
+
 plugins {
     id("com.android.application")
     id("kotlin-android")
@@ -126,7 +127,7 @@ dependencies {
     // Compose навигация
     implementation (libs.androidx.navigation.compose)
 
-    // графическая обработка (более современное решение по загрузке пикч вместо Glide или Picasso)
+    // Пикчи
     implementation(libs.coil.compose)
     implementation("com.google.accompanist:accompanist-pager:0.36.0")
     implementation("com.google.accompanist:accompanist-pager-indicators:0.36.0")

@@ -1,4 +1,4 @@
-package com.pavlovalexey.startsetupforcomposein2024.viewmodel
+package com.pavlovalexey.startsetupforcomposein2024.ui.sceens
 
 sealed class UiState {
     object Loading : UiState()

@@ -1,4 +1,3 @@
-/** Павлов Алексей, тестовое 2025 */
     package com.pavlovalexey.startsetupforcomposein2024
 
     import android.app.Application

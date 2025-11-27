@@ -7,9 +7,9 @@ import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
-import com.pavlovalexey.startsetupforcomposein2024.ui.WorkoutListScreen
-import com.pavlovalexey.startsetupforcomposein2024.ui.eventdetail.WorkoutDetailScreen
-import com.pavlovalexey.startsetupforcomposein2024.ui.player.VideoPlayerScreen
+import com.pavlovalexey.startsetupforcomposein2024.ui.sceens.start.WorkoutListScreen
+import com.pavlovalexey.startsetupforcomposein2024.ui.sceens.workoutDetail.WorkoutDetailScreen
+import com.pavlovalexey.startsetupforcomposein2024.ui.sceens.player.VideoPlayerScreen
 import androidx.annotation.Keep
 
 @Keep

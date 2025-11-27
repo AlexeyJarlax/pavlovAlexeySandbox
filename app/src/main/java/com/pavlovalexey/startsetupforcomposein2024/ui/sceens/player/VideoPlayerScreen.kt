@@ -1,4 +1,4 @@
-package com.pavlovalexey.startsetupforcomposein2024.ui.player
+package com.pavlovalexey.startsetupforcomposein2024.ui.sceens.player
 
 import android.media.MediaPlayer
 import android.view.View

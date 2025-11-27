@@ -1,4 +1,4 @@
-package com.pavlovalexey.startsetupforcomposein2024.ui.eventdetail
+package com.pavlovalexey.startsetupforcomposein2024.ui.sceens.workoutDetail
 
 import android.net.Uri
 import androidx.compose.foundation.Image
@@ -19,8 +19,7 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import coil.compose.rememberImagePainter
-import com.pavlovalexey.startsetupforcomposein2024.viewmodel.UiState
-import com.pavlovalexey.startsetupforcomposein2024.viewmodel.WorkoutDetailViewModel
+import com.pavlovalexey.startsetupforcomposein2024.ui.sceens.UiState
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.pavlovalexey.startsetupforcomposein2024.ui.theme.AlexIconButton
 

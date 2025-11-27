@@ -1,9 +1,10 @@
-package com.pavlovalexey.startsetupforcomposein2024.viewmodel
+package com.pavlovalexey.startsetupforcomposein2024.ui.sceens.start
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.pavlovalexey.startsetupforcomposein2024.model.Workout
 import com.pavlovalexey.startsetupforcomposein2024.repository.WorkoutRepository
+import com.pavlovalexey.startsetupforcomposein2024.ui.sceens.UiState
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -11,7 +12,7 @@ import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
-class WorkoutListViewModel @Inject constructor(
+class StartScreenViewModel @Inject constructor(
     private val repository: WorkoutRepository
 ) : ViewModel() {
 

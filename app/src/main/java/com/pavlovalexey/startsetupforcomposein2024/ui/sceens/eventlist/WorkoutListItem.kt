@@ -1,4 +1,4 @@
-package com.pavlovalexey.startsetupforcomposein2024.ui.eventlist
+package com.pavlovalexey.startsetupforcomposein2024.ui.sceens.eventlist
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
