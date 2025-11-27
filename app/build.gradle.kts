@@ -12,17 +12,17 @@ plugins {
 }
 
 android {
-    namespace = "com.pavlovalexey.startsetupforcomposein2024"
-    compileSdk = 35
+    namespace = "com.pavlovalexey.pavlovAlexeySandbox"
+    compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.pavlovalexey.startsetupforcomposein2024"
+        applicationId = "com.pavlovalexey.pavlovAlexeySandbox"
         resourceConfigurations += setOf("ru", "en")
-        minSdk = 29
-        targetSdk = 35
-        versionCode = 12
-        versionName = "0.12"
-        testInstrumentationRunner = "com.pavlovalexey.startsetupforcomposein2024.HiltTestRunner"
+        minSdk = 24 //Android 7
+        targetSdk = 36
+        versionCode = 13
+        versionName = "0.13"
+        testInstrumentationRunner = "com.pavlovalexey.pavlovAlexeySandbox.HiltTestRunner"
     }
 
     buildTypes {

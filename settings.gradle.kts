@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "StartSetupForComposeIn2024"
+rootProject.name = "pavlovAlexeySandbox"
 include(":app")

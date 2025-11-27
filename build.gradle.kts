@@ -1,4 +1,5 @@
-// Павлов Алексей, тестовое 2025
+// Павлов Алексей https://github.com/AlexeyJarlax
+
 import java.util.Properties
         import java.io.FileInputStream
 
