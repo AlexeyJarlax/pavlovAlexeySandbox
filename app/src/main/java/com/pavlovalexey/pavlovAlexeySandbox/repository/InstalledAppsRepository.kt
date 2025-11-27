@@ -63,6 +63,7 @@ class InstalledAppsRepositoryImpl @Inject constructor(
 
         val appInfo = pkgInfo.applicationInfo
             ?: throw IllegalStateException("applicationInfo is null for package $packageName")
+
         val appName = pm.getApplicationLabel(appInfo).toString()
         val versionName = pkgInfo.versionName
         val versionCode =
@@ -73,7 +74,11 @@ class InstalledAppsRepositoryImpl @Inject constructor(
                 pkgInfo.versionCode.toLong()
             }
 
-        val apkPath = appInfo.sourceDir
+        val apkPath = appInfo.publicSourceDir ?: appInfo.sourceDir
+
+        val apkFile = File(apkPath)
+        val apkSizeBytes = runCatching { apkFile.length() }.getOrNull()
+
         val checksum = calculateSha256(apkPath)
 
         return AppDetails(
@@ -81,7 +86,8 @@ class InstalledAppsRepositoryImpl @Inject constructor(
             packageName = packageName,
             versionName = versionName,
             versionCode = versionCode,
-            apkChecksumSha256 = checksum
+            apkChecksumSha256 = checksum,
+            apkSizeBytes = apkSizeBytes
         )
     }
 

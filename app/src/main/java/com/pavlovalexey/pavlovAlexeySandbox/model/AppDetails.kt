@@ -7,5 +7,6 @@ data class AppDetails(
     val packageName: String,
     val versionName: String?,
     val versionCode: Long?,
-    val apkChecksumSha256: String?
+    val apkChecksumSha256: String?,
+    val apkSizeBytes: Long? = null,
 )

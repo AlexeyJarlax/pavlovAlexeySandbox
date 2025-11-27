@@ -77,6 +77,11 @@ fun AppDetailScreen(
                             HorizontalDivider()
                             Text("versionCode: ${app.versionCode ?: 0}")
                             HorizontalDivider()
+                            app.apkSizeBytes?.let { bytes ->
+                                val mb = bytes.toDouble() / (1024 * 1024)
+                                Text("Размер APK: ${"%.2f".format(mb)} МБ")
+                                HorizontalDivider()
+                            }
                             VSpacer()
                             Text(text = "Контрольная сумма APK по SHA-256:")
                             Text(text = app.apkChecksumSha256 ?: "Не удалось посчитать")
